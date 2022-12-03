@@ -1,0 +1,273 @@
+@import 'normalize'
+@import 'setting'
+@import 'variables'
+
+/* header */
+.header
+  margin-bottom: 114px
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 42px
+  &-main
+    display: flex
+    align-items: center
+  &__logo
+    display: block
+    margin-right: 95px
+
+.menu
+  &-list
+    display: flex
+    &__item
+      margin-right: 50px
+    &__link
+      color: $white
+      font-size: 18px
+.phone
+  font-size: 24px
+  color: $white
+.humburger
+  &-menu
+    display: none
+    background-image: url("../img/icon/menu.svg")
+    background-color: transparent
+    background-size: contain
+    width: 30px
+    height: 30px
+    border: none
+    transition: background-image 0.5s
+    &-active
+      background-image: url("../img/icon/close.svg")
+
+/* main */
+.main
+  &-wrapper
+    position: relative
+    background-image: url('../img/car/image-1.png')
+    background-repeat: no-repeat
+    background-position: 90% 35%
+    background-size: 900px
+    display: flex
+    justify-content: space-between
+    padding-bottom: 252px
+  &__title
+    margin: 0
+    font-weight: bold
+    text-align: center
+    font-size: 120px
+    line-height: 1
+  &__descr
+    margin: 0 0 84px 0
+    max-width: 480px
+    font-size: 28px
+    opacity: 0.4
+  &__button
+    margin-bottom: 180px
+    max-width: 220px
+    display: block
+  &__scroll
+    display: block
+    background-image: url('../img/icon/scroll.svg')
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    width: 40px
+    height: 60px
+
+    &:focus
+      outline: none
+.play
+  display: block
+  background-image: url('../img/icon/play.svg')
+  background-size: contain
+  background-repeat: no-repeat
+  padding-left: 30px
+  border: none
+  color: $primary
+  &:focus
+    outline: none
+  &__icon
+    margin-right: 13px
+
+/* design */
+.design
+  &-wrapper
+    padding-bottom: 200px
+  &-block
+    display: flex
+    justify-content: space-between
+  &__title
+    margin-bottom: 49px
+  &-list
+    display: flex
+    margin-bottom: 33px
+    &__item
+      font-size: 24px
+      color: #ccc
+      padding-bottom: 7px
+      background-color: transparent
+      border-color: transparent
+      & + &
+        margin-left: 50px
+      &_active
+        color: $white
+        border-bottom: 2px solid $white
+  &__descr
+    margin: 0 0 28px 0
+    font-size: 16px
+    line-height: 1.6
+  &-images
+    display: flex
+    justify-content: space-between
+  &__img
+    display: block
+    width: 23%
+    object-fit: cover
+.more
+  color: $primary
+  font-size: 16px
+  padding: 5px
+  line-height: 1.6
+  background-color: transparent
+  border: none
+
+/* feature */
+.feature
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    background-image: url(../img/car/image-2.png)
+    background-position: left
+    background-repeat: no-repeat
+    background-size: 50%
+    padding-left: 50%
+    min-height: 550px
+  &__img
+    width: 900px
+    min-width: 900px
+    object-fit: contain
+  &__title
+    margin-bottom: 74px
+  &-list
+    max-width: 571px
+  &__link
+    color: $white
+    background-color: transparent
+    border: none
+    width: 100%
+    background-image: url("../img/icon/arrowup.png")
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: right
+    outline: none
+    background-size: 30px
+    &_active
+      margin-bottom: 14px
+      background-image: url("../img/icon/arrowdown.svg")
+
+  &__item
+    margin-bottom: 20px
+  &-item
+    &-wrap
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__title
+      font-size: 24px
+      line-height: 1.6
+  &-sub
+    &__item
+      display: flex
+      justify-content: space-between
+      opacity: 0.5
+      font-size: 14px
+      line-height: 1.6
+      margin-bottom: 10px
+
+/* contacts */
+.contacts
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: url('../img/car/image-3.png') no-repeat right
+  &__descr
+    margin: 0 0 30px 0
+    font-size: 16px
+    line-height: 1.6
+    opacity: 0.5
+    max-width: 411px
+.form
+  max-width: 492px
+  background-color: #080808
+  &__button
+    margin-top: 40px
+    min-width: 220px
+
+/* modal */
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  &-wrapper
+    position: fixed
+    top: 50%
+    left: 50%
+    z-index: 9
+    max-width: 592px
+    width: 100%
+    height: 545px
+    max-height: 100%
+    transform: translate(-50%, -50%)
+    background-color: $dark
+    padding: 71px 57px
+    border: 1px solid $white
+  &__title
+    margin-bottom: 23px
+  &__descr
+    margin: 0 0 30px 0
+  &-buttons
+    display: flex
+    margin-top: 30px
+  &__button
+    margin-right: 48px
+  &__close
+    position: absolute
+    display: block
+    width: 30px
+    height: 30px
+    top: 15px
+    right: 15px
+    border: none
+    background-color: transparent
+    background-image: url('../img/icon/close.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    &:focus
+      outline: none
+.close
+  font-weight: bold
+  font-size: 16px
+  line-height: 1.5
+  color: $white
+  border: none
+  background-color: transparent
+  &:focus
+    outline: none
+.overlay
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(0,0,0,.5)
+  width: 100%
+  height: 100%
+  z-index: 2
+
+@import 'media'
